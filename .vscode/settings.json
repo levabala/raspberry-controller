@@ -1,0 +1,20 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "javascript.validate.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "ACReactComponentGenerator.styleFile.create": false,
+  "ACReactComponentGenerator.mainFile.extension": "tsx",
+  "ACReactComponentGenerator.global.lifecycleType": "reactv16",
+  "ACReactComponentGenerator.indexFile.extension": "ts"
+}
