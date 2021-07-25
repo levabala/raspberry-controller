@@ -1,7 +1,6 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src",
-  "entryFile": "server/main",
+  "sourceRoot": "src/server",
   "compilerOptions": {
     "plugins": [
       {
