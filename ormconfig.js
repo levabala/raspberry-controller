@@ -19,6 +19,7 @@ module.exports = {
   synchronize: false,
   type: 'postgres',
   username: process.env.POSTGRES_USER,
+  keepConnectionAlive: true,
   maxQueryExecutionTime:
     Number(process.env.POSTGRES_MAX_QUERY_EXECUTION_TIME) || 500,
 };
