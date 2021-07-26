@@ -1,6 +1,6 @@
-import { ViewModule } from './view/view.module';
+import { ViewModule } from './modules/view/view.module';
 import { getConnectionOptions } from 'typeorm';
-import { SettingModule } from './setting/setting.module';
+import { SettingModule } from './modules/setting/setting.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { Module } from '@nestjs/common';
@@ -9,6 +9,7 @@ import { join } from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
+import { HealthCheckModule } from './modules/healthcheck';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { ConfigModule } from '@nestjs/config';
       },
     }),
     SettingModule,
+    HealthCheckModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -8,5 +8,5 @@ clean:
 
 .PHONY: build
 build: clean
-	docker-compose up -d --build --force-recreate raspberry-controller-db;
+	docker-compose up -d --build --force-recreate db;
 	docker-compose ps;
